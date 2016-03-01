@@ -1,0 +1,309 @@
+
+/*HEADER*/
+
+.header {
+    font-family:'Lato';  
+    display: flex;
+    flex-direction: row;
+    height: 6rem; 
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.header ul a{
+  font-weight: 700;
+  font-size: .6rem;
+  font-size: 0.7rem;
+  max-width: 20px;
+  letter-spacing: .2rem;
+  line-height: 2.2;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 2vw;
+  
+}
+
+.header ul{
+display: flex;
+justify-content: space-between;
+list-style: none;
+
+}
+
+
+.header ul a:hover{
+  opacity: 0.5;
+}
+
+
+.logo{
+  flex-grow:1 ;
+  background-image: url('../img/logo_S.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  max-width: 20px;
+  flex-basis: 20%;
+  }
+
+/*PAGE*/
+
+
+
+
+
+html,body{
+    margin: 0;
+}
+
+h1,h2,h4,p,a,li,.size-number{
+    font-family: 'Lato';
+}
+
+
+h1{
+    font-size: 2rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+h4{
+    text-transform: uppercase;
+}
+
+
+p{
+    font-weight: 100;
+}
+
+a{
+    color: black;
+}
+
+
+
+.container{
+    margin: 0;
+}
+
+.photo{
+    margin: 0;
+    background-image: url(../img/kale.jpg);
+    min-height: 40vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+}
+
+.social, .btn, .sizes-container, .price{
+        border-bottom: solid 1px #EFEDEA;
+        padding: 20px;
+
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.social-text{
+    flex-grow: 1;
+
+}
+
+.social-icons{
+    flex: 1 1 40%;
+    max-width: 100px;
+    background-image: url(../img/facebook.png), url(../img/twitter.png), url(../img/pinterest.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: left center, right center, center;
+
+}
+
+
+.price{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.price-name{
+    text-transform: uppercase;
+    flex-grow: 1;
+}
+
+.price-number{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.sizes-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20;
+
+}
+
+.sizes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.size-number{
+    padding: 16px;
+    border: solid 1px gray;
+    min-width: 16px;
+    margin: 1px;
+}
+
+.size-number-selected{
+    background-color: gray;
+}
+
+.size-link{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+
+.btn{
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+button{
+    border: solid 1px;
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Lato';
+    padding: 10px 20px;
+}
+
+
+
+footer{
+    background-color: #EFECD3;
+    background-image: url(../img/logo_S.png);
+    background-repeat: no-repeat;
+    background-size: 33px auto;
+    background-position: center 10px;
+    padding-top: 70px;
+    padding-bottom: 10px;
+    clear: both;
+}
+
+.footer-text{
+    text-align: center;
+
+}
+
+.description{
+        padding: 20px;
+        }
+
+
+@media only screen and (min-width: 600px) {
+    .image{
+        float: left;
+        width: 40%;
+
+    }
+
+    .card{
+        float: right;
+        width: 60%;
+        
+    }
+
+    .description{
+        padding: 20px;
+        clear: both;
+        display: flex;
+        flex-direction: row;
+        border-top: solid 1px #EFEDEA;
+    }
+
+    .social{
+        border: none;
+    }
+
+    .price, .sizes-container, .btn{
+        margin:20px;
+    }
+
+    .description-part1, .description-part2{
+        flex: 1 1 50%;
+        max-width: 50%;
+    }
+
+    .description-part2{
+        padding-left: 20px;
+        margin-left: 20px;
+    }
+
+    .price{
+        border-top: solid 1px #EFEDEA;
+    }
+
+
+}
+
+@media only screen and (min-width: 768px) {
+    .image{
+        float: left;
+        width: 50%;
+
+    }
+
+
+    .card, .description{
+        float: right;
+        width: 50%;
+        
+    }
+
+    .description{ 
+        padding: 20px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        border: none;
+        clear: none;
+        box-sizing: border-box;
+    }
+
+    .social{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+        .description-part1, .description-part2{
+        max-width: 100%;
+
+
+
+}
+
+
+
